@@ -178,6 +178,11 @@ img {
 
 }
 
+
+.about:hover, .profil:hover, .article:hover {
+    background-color: #ffdaad;
+}
+
 .picture a:hover{
     background-color: #F28C0F;
 }
@@ -257,7 +262,8 @@ img {
 
 .article {
     display: flex;
-    padding-top: 32px;
+    margin-top: 32px;
+    border-radius: 32px;
 
 }
 
