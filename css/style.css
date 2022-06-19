@@ -178,6 +178,10 @@ img {
 
 }
 
+.picture a:hover{
+    background-color: #F28C0F;
+}
+
 
 .profil {
     max-width: 49%;
@@ -637,8 +641,6 @@ footer {
     .profil {
         max-width: 100%;
     }
-
-
 
 }
 

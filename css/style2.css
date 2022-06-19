@@ -2,11 +2,19 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
+
 .container {
     max-width: 1276px;
     margin: auto;
 }
 
+.nav-bar-menu{
+    display: none;
+}
 
 .logo {
     display: flex;
@@ -21,6 +29,7 @@ body {
     font-family: 'PT Serif Caption';
     margin-left: 12px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .flex-wrapper {
@@ -60,13 +69,14 @@ body {
     display: flex;
     padding-top: 51px;
     padding-bottom: 95px;
+    align-items: center;
 }
 
 .we p {
     font-weight: 500;
     font-size: 28px;
     line-height: 140%;
-    padding: 146px 0 146px 20px;
+    padding-left: 20px;
 }
 
 
@@ -128,12 +138,18 @@ body {
     color: #555555;
 }
 
+.teachers{
+    width: 24%;
+}
 
 .part2 li {
     padding-bottom: 16px;
     
 }
 
+.img-we, .text-we {
+    width: 50%;
+}
 
 .part2 a {
     font-weight: 400;
@@ -145,4 +161,184 @@ body {
 
 footer {
     background-color: #EEEEEE;
+}
+
+@media (max-width: 1290px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .teachers{
+        width: 40%;
+    }
+
+    .img-we {
+        width: 60%;
+    }
+
+    .team-name {
+        justify-content: space-evenly;
+    }
+
+    .we p {
+        padding: 0;
+        padding-left: 40px;
+    }
+}
+
+
+@media (max-width: 948px) {
+    .we p {
+        font-size: 25px;
+    }
+
+}
+
+
+@media (max-width: 895px) {
+    .navigation {
+        display: none;
+    }
+
+    .nav-bar-menu img {
+        max-width: 51px;
+        height: 50px;
+    }
+
+    .nav-bar-menu {
+        display: flex;
+    }
+
+    .dropbtn {
+        background-color: #FFFFFF;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    .dropdown:hover .dropbtn {
+        background-color: #e7e6e6;
+    }
+
+
+    .dropdown-content p {
+        margin-bottom: 0;
+    }
+
+    .for-familiarization{
+        display: block;
+    }
+
+
+    .part1 {
+        margin-bottom: 30px;
+    }
+
+    .part2 ul{
+        padding-left: 0px;
+    }
+
+    .blog:first-child {
+        display: none;
+    }
+    
+    .blog {
+        max-width: 100%;
+    }
+
+    .picture-info {
+        padding: 50px 0;
+    }
+
+    .part3 {
+        padding-top: 20px;
+    }
+} 
+
+
+@media (max-width: 860px) {
+    .img-we {
+        width: 40%;
+    }
+    .text-we {
+        width: 57%;
+    }
+
+    .we p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:780px) {
+    .teachers {
+        width: 60%;
+    }
+}
+
+@media (max-width: 730px) {
+    .img-we{
+        display: none;
+    }
+
+    .we {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text-we {
+        width: 90%;
+    }
+    .we p {
+        padding: 0%;
+    }
+}
+
+@media (max-width: 520px) {
+    .teachers {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 388px) {
+    .part1 p{
+        width: 95%;
+    }
 }
